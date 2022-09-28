@@ -24,72 +24,7 @@ export default function Home({ posts }) {
             🧑🏻‍💻 Latest
           </h1>
         </div>
-        <ul className="divide-y divide-gray-200 dark:divide-gray-700">
-          {/* eslint-disable-next-line jsx-a11y/accessible-emoji */}
-          {!posts.length && <li className="text-lg pt-8">🧐 검색 결과가 없습니다.</li>}
-          {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
-            const { slug, thumbSrc, title, summary, tags } = frontMatter
-            return (
-              <li key={slug} className="py-14 items-center">
-                <article>
-                  <Link href={`/blog/${slug}`} className="text-gray-900 dark:text-gray-100">
-                    <div className="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0">
-                      <div className="rounded-md overflow-hidden">
-                        <Image
-                          className="object-cover object-center transform scale-100 transition-all duration-300 ease-in-out hover:scale-110"
-                          src={thumbSrc}
-                          alt={thumbSrc}
-                          blurDataURL={thumbSrc}
-                          width="100%"
-                          height="65%"
-                          placeholder="blur"
-                          loading="lazy"
-                          layout="responsive"
-                        />
-                      </div>
-                      <div className="space-y-5 xl:col-span-3 xl:ml-5">
-                        <div className="space-y-6">
-                          <div>
-                            <h2 className="text-2xl font-bold leading-8 tracking-tight">{title}</h2>
-                            <div className="flex flex-wrap pt-3">
-                              {tags.map((tag) => (
-                                <Tag key={tag} text={tag} />
-                              ))}
-                            </div>
-                          </div>
-                          <div className="prose text-gray-500 max-w-none dark:text-gray-400 truncate">
-                            {summary}
-                          </div>
-                        </div>
-                        <div className="text-base font-medium leading-6">
-                          <Link
-                            href={`/blog/${slug}`}
-                            className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-                            aria-label={`Read "${title}"`}
-                          >
-                            더 보기 &rarr;
-                          </Link>
-                        </div>
-                      </div>
-                    </div>
-                  </Link>
-                </article>
-              </li>
-            )
-          })}
-        </ul>
       </div>
-      {posts.length > MAX_DISPLAY && (
-        <div className="flex justify-end text-base font-medium leading-6">
-          <Link
-            href="/blog"
-            className="text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-            aria-label="all posts"
-          >
-            모든 글 보기 &rarr;
-          </Link>
-        </div>
-      )}
     </>
   )
 }
