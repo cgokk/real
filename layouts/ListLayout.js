@@ -29,7 +29,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
               type="text"
               onChange={(e) => setSearchValue(e.target.value)}
               placeholder="무슨 공부를 했을까"
-              className="text-sm md:text-lg block w-full leading-8 px-2 md:px-4 md:py-3 text-gray-900 dark:text-gray-100 bg-gray-100 dark:bg-gray-800 border border-white dark:border-gray-900 rounded-md focus:ring-blue-600 focus:border-blue-600"
+              className="text-sm md:text-lg block w-full leading-8 px-3 md:px-4 md:py-3 text-gray-900 dark:text-gray-100 bg-gray-100 dark:bg-gray-800 border border-white dark:border-gray-900 rounded-md focus:ring-blue-600 focus:border-blue-600"
             />
           </div>
         </div>
