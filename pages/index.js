@@ -23,9 +23,6 @@ export default function Home({ posts }) {
           <h1 className="text-2xl md:text-4xl font-bold leading-8 md:leading-10 tracking-tight text-gray-900 dark:text-gray-100">
             🧑🏻‍💻 Latest
           </h1>
-          <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            {siteMetadata.description}
-          </p>
         </div>
         <ul className="divide-y divide-gray-200 dark:divide-gray-700">
           {/* eslint-disable-next-line jsx-a11y/accessible-emoji */}
