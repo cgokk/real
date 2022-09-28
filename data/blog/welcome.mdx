@@ -1,0 +1,73 @@
+---
+title: 'git과 명령어'
+thumbSrc: '/static/images/welcome.webp'
+date: '2022-02-27'
+tags: ['FE']
+draft: false
+summary: 'git과 명령어를 배워보자'
+images: ['/static/images/welcome.webp']
+---
+
+# 📌 git이 뭔가요?
+
+git이란
+git이란 __분산형 버전 관리 시스템 VCS(Version Control System)__ 의 한 종류로  
+문서를 수정할 때마다 구체적으로 기록하기 위한 시스템이다.  
+그중 깃의 백업 공간을 제공하는 깃의 원격저장소가 있는데  
+가장 많이 쓰이는 원격저장소가 바로 Github다.
+
+---
+
+# 👉 git의 명령어들
+
+## 설정
+
+### 사용자 이름 생성
+$ git config --global user.name "your name"
+
+## 사용자 이메일 생성
+$ git config --global user.email "your_email@youremail.com"
+
+## 초기화
+
+### 깃 초기화 : 기존 디렉토리를 git 저장소로
+$ git init
+
+### 깃 상태 확인 : 현재 작업중인 브랜치와 파일 상태
+$ git status
+
+### 커밋하기
+$ git commit -m 'message'
+
+## 원격저장소
+
+### 원격 저장소에 업로드
+$ git push origin master
+
+### 원격 저장소에서 다운로드
+$ git pull origin master
+
+### 저장소 복제
+$ git clone "url"
+
+### 저장소 추가
+$ git remote add origin "url"
+
+---
+
+# 👉 터미널 명령어들
+
+#### pwd : 현재 파일경로
+
+#### ls : 현재 디렉토리 안 파일 목록 확인
+
+#### open . : 현재 경로 폴더 열기
+
+#### cd : 현재 경로 위치 변경
+
+#### find : 특정한 파일이나 디렉토리를 찾을 때 사용
+
+#### touch : 새로운 파일 생성
+
+#### cat : 파일내용 터미널로 확인
+
