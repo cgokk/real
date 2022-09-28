@@ -1,6 +1,3 @@
-import Link from '@/components/Link'
-import Tag from '@/components/Tag'
-import Image from '@/components/Image'
 import { PageSEO } from '@/components/SEO'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 import siteMetadata from '@/data/siteMetadata'
