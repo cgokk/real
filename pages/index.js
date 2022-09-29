@@ -23,17 +23,6 @@ export default function Home({ posts }) {
             걸어다니는 스타트업 강차곡
           </h1>
         </div>
-
-        <div className="flex flex-col self-end max-w-none xl:col-span-2">
-          <h3 className="font-bold pb-1 md:pb-3 text-2xl md:text-3xl tracking-tight text-gray-900 dark:text-white">강차곡</h3>
-          <div className="font-semibold pb-2 text-xl md:text-2xl text-gray-600 dark:text-gray-300">다재다능한 마케터</div>
-          <div className="font-medium text-base md:text-xl md:leading-relaxed text-gray-500 dark:text-gray-400">
-            Email. ridalswl@gmail.com<br></br>
-            Phone. 010-7586-9399<br></br>
-            Blog. https://wonny.space/<br></br>
-            GitHub. https://github.com/wonny-log<br></br>
-          </div>
-        </div>
       </div>
     </>
   )
