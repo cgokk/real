@@ -23,6 +23,7 @@ export default function Home({ posts }) {
             걸어다니는 스타트업 강차곡
           </h1>
         </div>
+        <img src="./static/images/avatar.png"></img>
       </div>
     </>
   )
