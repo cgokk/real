@@ -10,6 +10,8 @@ export async function getStaticProps() {
   return { props: { posts } }
 }
 
+const DEFAULT_LAYOUT = 'AuthorLayout'
+
 export default function Home({ posts }) {
   return (
     <>
@@ -20,11 +22,16 @@ export default function Home({ posts }) {
           <h1 className="text-2xl md:text-4xl font-bold leading-8 md:leading-10 tracking-tight text-gray-900 dark:text-gray-100">
             걸어다니는 스타트업 강차곡
           </h1>
+        </div>
 
-          <div className="space-y-2 grid md:grid-cols-3 xl:grid-cols-4 xl:gap-x-8 xl:space-y-0 mb-4 md:mb-6">
-            <div className="flex flex-col items-start">
-              <img class="w-[130px] sm:w-[190px] relative mb-2 sm:mb-0 mr-auto" src='/static/images/avatar.png' alt="avatar"></img>
-            </div>
+        <div className="flex flex-col self-end max-w-none xl:col-span-2">
+          <h3 className="font-bold pb-1 md:pb-3 text-2xl md:text-3xl tracking-tight text-gray-900 dark:text-white">강차곡</h3>
+          <div className="font-semibold pb-2 text-xl md:text-2xl text-gray-600 dark:text-gray-300">다재다능한 마케터</div>
+          <div className="font-medium text-base md:text-xl md:leading-relaxed text-gray-500 dark:text-gray-400">
+            Email. ridalswl@gmail.com<br></br>
+            Phone. 010-7586-9399<br></br>
+            Blog. https://wonny.space/<br></br>
+            GitHub. https://github.com/wonny-log<br></br>
           </div>
         </div>
       </div>
