@@ -3,18 +3,17 @@ import Link from './Link'
 
 const Card = ({ title, description, imgSrc, href }) => (
   <div className="p-4">
-    <div className="h-full overflow-hidden border-2 border-gray-200 rounded-md border-opacity-60 dark:border-gray-700">
+    <div className="h-full overflow-hidden">
       {href ? (
         <Link href={href} aria-label={`Link to ${title}`}>
           <Image
-            className="object-cover object-center lg:h-48 md:h-36"
+            className="rounded-md object-cover object-center lg:h-48 md:h-36"
             src={imgSrc}
             alt={title}
             blurDataURL={imgSrc}
             placeholder="blur"
             width={544}
-            height={306}
-            style={{ minHeight: '250px' }}
+            height={544}
           />
         </Link>
       ) : (
@@ -23,10 +22,10 @@ const Card = ({ title, description, imgSrc, href }) => (
           src={imgSrc}
           className="object-cover object-center lg:h-48 md:h-36"
           width={544}
-          height={306}
+          height={544}
         />
       )}
-      <div className="p-6">
+      <div className="pt-2">
         <h2 className="mb-3 text-2xl font-bold leading-8 tracking-tight">
           {href ? (
             <Link href={href} aria-label={`Link to ${title}`}>
@@ -37,15 +36,6 @@ const Card = ({ title, description, imgSrc, href }) => (
           )}
         </h2>
         <p className="mb-3 prose text-gray-500 max-w-none dark:text-gray-400">{description}</p>
-        {href && (
-          <Link
-            href={href}
-            className="text-base font-medium leading-6 text-primary-500 hover:text-primary-600 dark:hover:text-primary-400"
-            aria-label={`Link to ${title}`}
-          >
-            더 보기 &rarr;
-          </Link>
-        )}
       </div>
     </div>
   </div>
