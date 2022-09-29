@@ -9,7 +9,7 @@ export default function AuthorLayout({ children, frontMatter }) {
     <>
       <PageSEO title={`About - ${name}`} description={`About me - ${name}`} />
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
-        <div className="pt-5 md:pt-6 pb-6 md:pb-8 space-y-3 md:space-y-5">
+        <div className="pt-4 md:pt-6 pb-4 md:pb-8 space-y-3 md:space-y-5">
           {/* eslint-disable-next-line jsx-a11y/accessible-emoji */}
           <h1 className="text-2xl md:text-4xl font-bold leading-8 md:leading-10 tracking-tight text-gray-900 dark:text-gray-100">
             소소한 하루를 기록합니다
