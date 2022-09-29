@@ -19,7 +19,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
   return (
     <>
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
-        <div className="pt-4 md:pt-6 pb-6 md:pb-8 space-y-3 md:space-y-5">
+        <div className="pt-5 md:pt-6 pb-6 md:pb-8 space-y-3 md:space-y-5">
           <h1 className="text-2xl md:text-4xl font-bold leading-8 md:leading-10 tracking-tight text-gray-900 dark:text-gray-100">
             {title}
           </h1>
@@ -63,7 +63,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
                         <div className="prose text-gray-500 max-w-none dark:text-gray-400 truncate md:pt-2">
                           {summary}
                         </div>
-                        <div className="flex flex-wrap md:pt-1">
+                        <div className="flex flex-wrap">
                           {tags.map((tag) => (
                             <Tag key={tag} text={tag} />
                           ))}
