@@ -59,7 +59,7 @@ const MobileNav = () => {
         />
         <nav className="fixed h-full">
           {headerNavLinks.map((link) => (
-            <div key={link.title} className="px-4 py-3">
+            <div key={link.title} className="px-5 sm:px-6 py-3">
               <Link
                 href={link.href}
                 className="text-2xl font-bold tracking text-gray-900 dark:text-gray-100"

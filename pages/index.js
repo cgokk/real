@@ -15,10 +15,10 @@ export default function Home({ posts }) {
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
-        <div className="pt-4 md:pt-6 pb-6 md:pb-8 space-y-2 md:space-y-5">
+        <div className="pt-5 md:pt-6 pb-6 md:pb-8 space-y-3 md:space-y-5">
           {/* eslint-disable-next-line jsx-a11y/accessible-emoji */}
           <h1 className="text-2xl md:text-4xl font-bold leading-8 md:leading-10 tracking-tight text-gray-900 dark:text-gray-100">
-            🧑🏻‍💻 Latest
+            걸어다니는 스타트업 강차곡
           </h1>
         </div>
       </div>
