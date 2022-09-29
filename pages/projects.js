@@ -11,11 +11,11 @@ export default function Projects() {
         <div className="pt-6 pb-8 space-y-2 md:space-y-5">
           {/* eslint-disable-next-line jsx-a11y/accessible-emoji */}
           <h1 className="text-2xl md:text-4xl font-bold leading-8 md:leading-10 tracking-tight text-gray-900 dark:text-gray-100">
-            🚧 Projects
+            디자인 이즈 마이 라이프
           </h1>
         </div>
-        <div className="container py-12">
-          <div className="flex flex-wrap -m-4">
+        <div className="container py-8">
+          <div className="flex flex-wrap -m-4 grid xl:grid-cols-3 md:grid-cols-2">
             {projectsData.map((d) => (
               <Card
                 key={d.title}

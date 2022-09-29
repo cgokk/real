@@ -24,7 +24,7 @@ export default function Blog({ posts, initialDisplayPosts, pagination }) {
         posts={posts}
         initialDisplayPosts={initialDisplayPosts}
         pagination={pagination}
-        title="부족함을 채워요"
+        title="부족함을 차곡차곡 채워요"
       />
     </>
   )
