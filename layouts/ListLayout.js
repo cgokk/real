@@ -41,7 +41,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
             return (
               <li key={slug} className="py-6 md:py-8">
                 <Link href={`/blog/${slug}`}>
-                  <article className="space-y-2 grid md:grid-cols-3 xl:grid-cols-4">
+                  <article className="space-y-2 md:space-y-4 grid md:grid-cols-3 xl:grid-cols-4">
                     <div className="rounded-md overflow-hidden">
                       <Image
                         className="object-cover object-center transform scale-100 transition-all duration-300 ease-in-out hover:scale-110"
@@ -55,18 +55,18 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
                         layout="responsive"
                       />
                     </div>
-                    <div className="space-y-3 xl:col-span-3 md:ml-5">
+                    <div className="space-y-2 xl:col-span-3 md:ml-6">
                       <div>
                         <h3 className="text-xl md:text-2xl font-bold leading-8 tracking-tight text-gray-900 dark:text-gray-100">
                           {title}
                         </h3>
-                        <div className="prose text-gray-500 max-w-none dark:text-gray-400 truncate md:pt-2">
-                          {summary}
-                        </div>
                         <div className="flex flex-wrap">
                           {tags.map((tag) => (
                             <Tag key={tag} text={tag} />
                           ))}
+                        </div>
+                        <div className="prose text-gray-500 max-w-none dark:text-gray-400 truncate md:pt-2">
+                          {summary}
                         </div>
                       </div>
                     </div>

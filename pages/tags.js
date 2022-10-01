@@ -16,25 +16,27 @@ export default function Tags({ tags }) {
   return (
     <>
       <PageSEO title={`Tags - ${siteMetadata.author}`} description="Things I blog about" />
-      <div className="flex flex-col h-70v items-center divide-y-2 divide-gray-200 justify-center dark:divide-gray-700 md:divide-y-0 md:flex-row md:space-x-6">
-        <div className="pt-6 pb-8 space-x-2 md:space-y-5">
+      <div className="divide-y divide-gray-200 dark:divide-gray-700">
+        <div className="pt-4 md:pt-6 pb-4 md:pb-8 space-y-3 md:space-y-5">
           {/* eslint-disable-next-line jsx-a11y/accessible-emoji */}
-          <h1 className="text-4xl font-extrabold leading-9 text-gray-900 md:border-r-2 border-gray-200 dark:text-gray-100 dark:border-gray-700 md:px-6 md:pb-3">
-            📂 Tags
+          <h1 className="text-2xl md:text-4xl font-bold leading-8 md:leading-10 tracking-tight text-gray-900 dark:text-gray-100">
+            태그 모음집
           </h1>
         </div>
-        <div className="flex flex-wrap max-w-lg pt-6 md:pt-0">
+        <div className="pt-2 md:pt-4 pb-2 md:pb-6 space-y-2 md:space-y-5">
           {Object.keys(tags).length === 0 && 'No tags found.'}
           {sortedTags.map((t) => {
             return (
               <div key={t} className="mt-2 mb-2 mr-5">
-                <Tag text={t} />
-                <Link
-                  href={`/tags/${kebabCase(t)}`}
-                  className="-ml-2 text-sm font-semibold text-gray-600 uppercase dark:text-gray-300"
-                >
-                  {` (${tags[t]})`}
-                </Link>
+                <div className="text-lg md:text-xl">
+                  <Tag text={t} />
+                  <Link
+                    href={`/tags/${kebabCase(t)}`}
+                    className="-ml-2 text-gray-600 text-gray-500 dark:text-gray-400"
+                  >
+                    {` ${tags[t]}`}
+                  </Link>
+                </div>
               </div>
             )
           })}
