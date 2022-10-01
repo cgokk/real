@@ -27,11 +27,11 @@ export default function Home({ posts }) {
           <div className="flex items-start">
             <img className="w-[150px] sm:w-[190px]" src="./static/images/avatar.png"></img>
           </div>
-          <div className="flex flex-col md:self-end md:pl-8 sm:pt-2 max-w-none xl:col-span-2">
-            <div className="font-bold pb-1 md:pb-3 text-2xl md:text-3xl tracking-tight text-gray-900 dark:text-white">
+          <div className="flex flex-col md:self-end md:pl-8 py-2 md:py-0 max-w-none xl:col-span-2">
+            <div className="font-bold md:pb-3 text-2xl md:text-3xl tracking-tight text-gray-900 dark:text-white">
               강차곡
             </div>
-            <div className="font-semibold pb-2 text-xl md:text-2xl text-gray-600 dark:text-gray-300">
+            <div className="font-semibold md:pb-2 text-xl md:text-2xl text-gray-600 dark:text-gray-300">
               다재다능한 마케터
             </div>
             <div className="font-medium text-base md:text-xl md:leading-relaxed text-gray-500 dark:text-gray-400">
