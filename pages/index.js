@@ -25,7 +25,7 @@ export default function Home({ posts }) {
         </div>
         <div className="flex md:flex-row flex-col">
           <div className="flex items-start">
-            <img className="w-[150px] md:w-[190px]" src="./static/images/avatar.png" alt="이모지"></img>
+            <img className="w-[150px] md:w-[190px]" src="./static/images/avatar.png"></img>
           </div>
           <div className="flex flex-col md:self-end md:pl-8 py-2 md:py-0 max-w-none xl:col-span-2">
             <div className="font-bold md:pb-3 text-2xl md:text-3xl text-gray-900 dark:text-white">
