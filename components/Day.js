@@ -2,8 +2,8 @@ import Link from './Link'
 
 const Day = ({ title, description, href, date }) => (
   <ul className="divide-y divide-gray-200 dark:divide-gray-700">
-    <li className="py-5 md:py-8">
-      <h2 className="text-xl md:text-2xl font-medium md:mb-2 leading-10 tracking-tight text-gray-700 dark:text-gray-300">
+    <li className="py-4 md:py-6">
+      <h2 className="text-xl font-medium leading-10 tracking-tight text-gray-700 dark:text-gray-300">
         {href ? (
           <Link href={href} aria-label={`Link to ${title}`}>
             {title}

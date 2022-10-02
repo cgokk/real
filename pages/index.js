@@ -50,7 +50,7 @@ export default function Home({ posts }) {
           </h1>
           <p className="font-medium text-base py-3 md:py-4 md:text-xl tracking-tight text-gray-500 dark:text-gray-400">
             현재는 스타트업을 마케팅해주는 광고대행사에서 콘텐츠 마케터로 일하고 있으며<br></br>
-            주로 상세페이지와 콘텐츠를 기획하거나 마케팅 전략을 세우고 있습니다.
+            주로 마케팅 전략을 세우거나 콘텐츠와 상세페이지를 기획하고 있습니다.
           </p>
           <p className="font-medium text-base md:text-xl tracking-tight text-gray-500 dark:text-gray-400 list-disc">
             꿈과 욕심이 많아 다양한 분야를 공부하고 도전하고 있습니다.<br></br>
@@ -62,8 +62,8 @@ export default function Home({ posts }) {
             사용 가능한 툴
           </h1>
           <div className="xl:grid grid-cols-2 gap-6 py-3 md:py-4">
-            <div className="flex rounded-lg bg-gray-100 dark:bg-gray-800 mb-4 xl:mb-0">
-              <div className="p-4">
+            <div className="flex rounded-md bg-gray-100 dark:bg-gray-800 mb-4 xl:mb-0">
+              <div className="p-3 md:p-5">
                 <img className="w-[64px] md:w-[80px] rounded" src="./static/images/ps.png"></img>
               </div>
               <div className="p-4 lg:p-5 md:p-5 overflow-hidden">
