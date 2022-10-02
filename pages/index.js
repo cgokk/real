@@ -56,17 +56,6 @@ export default function Home({ posts }) {
         <h1 className="text-xl pt-3 md:pt-8 md:text-3xl font-bold leading-8 md:leading-10 tracking-tight text-gray-900 dark:text-gray-100">
           사용 가능한 툴
         </h1>
-        <div class="xl:grid grid-cols-2 gap-6">
-          <div class="flex rounded-lg bg-gray-100 dark:bg-gray-800 mb-4 xl:mb-0">
-            <div class="p-4">
-              <img class="h-16 w-16 lg:h-14 lg:w-14 xl:h-20 xl:w-20 rounded-full" src='/static/images/favicon.png' alt='포토샵'></img>
-            </div>
-            <div class="p-4 lg:p-5 md:p-5 overflow-hidden">
-              <h3 class="font-semibold mb-1 md:mb-2 text-lg md:text-2xl text-gray-800 dark:text-gray-200">포토샵</h3>
-              <p class="text-base md:text-lg text-gray-700 dark:text-gray-400">어도비 포토샵은</p>
-            </div>
-          </div>
-        </div>
       </div>
     </>
   )
