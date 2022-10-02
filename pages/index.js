@@ -42,7 +42,7 @@ export default function Home({ posts }) {
             </div>
           </div>
         </div>
-        <h1 className="text-xl pt-3 md:pt-8 md:text-3xl font-bold leading-8 md:leading-10 tracking-tight text-gray-900 dark:text-gray-100">
+        <h1 className="text-2xl pt-3 md:pt-8 md:text-3xl font-bold leading-8 md:leading-10 tracking-tight text-gray-900 dark:text-gray-100">
           간단한 자기소개
         </h1>
         <p className="font-medium text-base pt-2 md:pt-4 md:text-xl tracking-tight mb-3 md:mb-4 text-gray-500 dark:text-gray-400">
@@ -53,9 +53,20 @@ export default function Home({ posts }) {
           꿈과 욕심이 많아 다양한 분야를 공부하고 도전하고 있습니다.<br></br>
           하나만 잘 하는 사람보다는 다방면에서 뛰어난 사람이 되고 싶습니다.
         </p>
-        <h1 className="text-xl pt-3 md:pt-8 md:text-3xl font-bold leading-8 md:leading-10 tracking-tight text-gray-900 dark:text-gray-100">
+        <h1 className="text-2xl pt-5 md:pt-8 md:text-3xl font-bold leading-8 md:leading-10 tracking-tight text-gray-900 dark:text-gray-100">
           사용 가능한 툴
         </h1>
+        <div className="xl:grid grid-cols-2 gap-6">
+          <div className="flex rounded-lg bg-gray-100 dark:bg-gray-800 mb-4 xl:mb-0">
+            <div className="p-4">
+              <img className="h-16 w-16 md:h-14 md:w-14 xl:h-20 xl:w-20 rounded" src='./static/images/ps.png'></img>
+            </div>
+            <div className="p-4 lg:p-5 md:p-5 overflow-hidden">
+              <h3 className="font-semibold mb-1 md:mb-2 text-lg md:text-2xl text-gray-800 dark:text-gray-200">포토샵</h3>
+              <p className="text-base md:text-lg text-gray-700 dark:text-gray-400">어도비 포토샵은</p>
+          </div>
+        </div>
+        </div>
       </div>
     </>
   )
