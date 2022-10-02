@@ -55,7 +55,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
                         layout="responsive"
                       />
                     </div>
-                    <div className="space-y-2 xl:col-span-3 md:ml-6">
+                    <div className="space-y-2 xl:col-span-3 md:ml-6 pt-1">
                       <div>
                         <div className="flex flex-wrap">
                           {tags.map((tag) => (
