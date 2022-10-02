@@ -65,7 +65,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
                         <h3 className="text-xl md:text-2xl font-bold leading-8 tracking-tight text-gray-900 dark:text-gray-100">
                           {title}
                         </h3>
-                        <div className="prose pt-1 text-gray-500 max-w-none dark:text-gray-400 truncate md:pt-2">
+                        <div className="prose text-gray-500 max-w-none dark:text-gray-400 truncate md:pt-2">
                           {summary}
                         </div>
                       </div>
