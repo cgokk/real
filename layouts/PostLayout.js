@@ -71,7 +71,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                         <h2 className="text-base tracking-normal text-gray-500 pb-2 dark:text-gray-400">
                           이전 글
                         </h2>
-                        <div className="text-blue-600 hover:text-blue-500 dark:hover:text-blue-500">
+                        <div className="text-base text-blue-600 hover:text-blue-500 dark:hover:text-blue-500">
                           <Link href={`/blog/${prev.slug}`}>{prev.title}</Link>
                         </div>
                       </div>
@@ -81,7 +81,7 @@ export default function PostLayout({ frontMatter, authorDetails, next, prev, chi
                         <h2 className="text-base tracking-normal text-gray-500 pb-2 dark:text-gray-400">
                           다음 글
                         </h2>
-                        <div className="text-text-blue-600 hover:text-text-blue-500 dark:hover:text-primary-400">
+                        <div className="text-base text-text-blue-600 hover:text-text-blue-500 dark:hover:text-primary-400">
                           <Link href={`/blog/${next.slug}`}>{next.title}</Link>
                         </div>
                       </div>
