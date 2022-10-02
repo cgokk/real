@@ -14,7 +14,7 @@ export default function Projects() {
             디자인 이즈 마이 라이프
           </h1>
         </div>
-        <div className="container py-8">
+        <div className="py-6 md:py-8">
           <div className="flex flex-wrap -m-4 grid xl:grid-cols-3 sm:grid-cols-2">
             {projectsData.map((d) => (
               <Card

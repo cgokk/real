@@ -32,9 +32,9 @@ export default function Tags({ tags }) {
                   <Tag text={t} />
                   <Link
                     href={`/tags/${kebabCase(t)}`}
-                    className="-ml-2 text-gray-600 text-gray-500 dark:text-gray-400"
+                    className="-ml-2 text-gray-600 text-blue-600"
                   >
-                    {` ${tags[t]}`}
+                    {` (${tags[t]})`}
                   </Link>
                 </div>
               </div>
