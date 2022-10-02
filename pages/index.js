@@ -63,15 +63,18 @@ export default function Home({ posts }) {
           </h1>
           <div className="xl:grid grid-cols-2 gap-6 py-3 md:py-4">
             <div className="flex rounded-md bg-gray-100 dark:bg-gray-800 mb-4 xl:mb-0">
-              <div className="p-3 md:p-5">
-                <img className="w-[64px] md:w-[80px] rounded" src="./static/images/ps.png"></img>
+              <div className="p-5 md:p-5">
+                <div className="h-12 w-12 md:h-14 md:w-14">
+                  <img src="./static/images/ps.png"></img>
+                </div>
               </div>
-              <div className="p-4 lg:p-5 md:p-5 overflow-hidden">
-                <h3 className="font-semibold mb-1 text-lg md:text-2xl text-gray-800 dark:text-gray-200">
+              <div className="py-5 pr-5 overflow-hidden">
+                <h3 className="font-bold mb-1 text-lg md:text-2xl text-gray-800 dark:text-gray-200">
                   포토샵
                 </h3>
                 <p className="text-base md:text-lg text-gray-700 dark:text-gray-400">
-                  어도비 포토샵은
+                  제일 좋아하는 툴이고 가장 자주 사용합니다.<br></br>
+                  많은 기능들을 능숙하게 사용할 수 있습니다.
                 </p>
               </div>
             </div>
