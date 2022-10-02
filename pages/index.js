@@ -59,13 +59,17 @@ export default function Home({ posts }) {
         <div className="xl:grid grid-cols-2 gap-6">
           <div className="flex rounded-lg bg-gray-100 dark:bg-gray-800 mb-4 xl:mb-0">
             <div className="p-4">
-              <img className="h-16 w-16 md:h-14 md:w-14 xl:h-20 xl:w-20 rounded" src='./static/images/ps.png'></img>
+              <img className="w-[64px] md:w-[80px] rounded" src="./static/images/ps.png"></img>
             </div>
             <div className="p-4 lg:p-5 md:p-5 overflow-hidden">
-              <h3 className="font-semibold mb-1 md:mb-2 text-lg md:text-2xl text-gray-800 dark:text-gray-200">포토샵</h3>
-              <p className="text-base md:text-lg text-gray-700 dark:text-gray-400">어도비 포토샵은</p>
+              <h3 className="font-semibold mb-1 text-lg md:text-2xl text-gray-800 dark:text-gray-200">
+                포토샵
+              </h3>
+              <p className="text-base md:text-lg text-gray-700 dark:text-gray-400">
+                어도비 포토샵은
+              </p>
+            </div>
           </div>
-        </div>
         </div>
       </div>
     </>
