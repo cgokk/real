@@ -38,8 +38,8 @@ export default function Home({ posts }) {
               <div className="font-medium pt-1 text-base md:text-lg md:leading-relaxed text-gray-500 dark:text-gray-400">
                 Email. ridalswl@gmail.com<br></br>
                 Phone. 010-7586-9399<br></br>
-                Blog. https://wonny.space/<br></br>
-                GitHub. https://github.com/wonny-log<br></br>
+                Blog. https://cgoklog.vercel.app/<br></br>
+                GitHub. <br></br>
               </div>
             </div>
           </div>
