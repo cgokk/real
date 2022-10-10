@@ -23,7 +23,7 @@ export default function Tags({ tags }) {
             태그 모음집
           </h1>
         </div>
-        <div className="flex max-w-lg flex-wrap pt-2 md:pt-4 pb-2 md:pb-6 ">
+        <div className="flex flex-wrap pt-2 md:pt-4 pb-2 md:pb-6 ">
           {Object.keys(tags).length === 0 && 'No tags found.'}
           {sortedTags.map((t) => {
             return (
